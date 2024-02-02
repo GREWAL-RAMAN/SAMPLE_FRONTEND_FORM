@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title> Document </title>
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js">
+        </script>
+        <script src="first.js"></script>
+
+    </head>
+
+
+    <body >
+        <div class ="container"> 
+            
+          <div class ="page-header text-center">
+         <h2> STUDENT ENROLLMENT </h2> 
+          </div>
+            
+            <form id = "studentform" method = "get">
+               
+             <div class ="form-group">
+              <label for = "rollno"> Roll Number : <input type = "text" id = "rollno"  onchange = "GET_INFO()"/>  </label>  
+
+            
+             </div> 
+
+              <div class ="form-group">
+                  <label for = "fullname"> Student Full Name : <input type = "text" id = "fullname"/> </label> 
+
+              </div>
+                
+               <div class ="form-group">
+
+                 <label for = "classin"> Class : <input type = "text" id = "classin"/> </label> 
+
+               </div>
+                
+               <div class ="form-group">
+                  <label for = "address" > Address : <input type = "text" id = "address" >  </label> 
+
+              
+               </div>
+                
+               <div class ="form-group">
+
+                 <label for = "dob"> Date of Birth : <input type = "date" id = "dob"  />  </label> 
+
+
+               </div>
+                
+               <div class ="form-group">
+
+                <label for = "enrolldate"> Date of Enrollnment : <input type = "date" id = "enrolldate"  /> </label> 
+                
+               </div>
+               <div class ="form-group text-center">
+
+                    <button type = "button" class = "btn btn-lg btn-primary" id = "save" onclick = "SAVE_STUDENT()"  disabled>  Save </button>  
+                    <button type = "button"  class = "btn btn-lg btn-primary" id = "update" onclick = "UPDATE_STUDENT()" disabled>  Update </button> 
+                    <button type = "button" class = "btn btn-lg btn-primary" id = "reset" onclick = "RESET()" disabled>  Reset </button>
+                
+               </div>
+            </form>
+        </div>
+
+        
+    </body>
+</html>
